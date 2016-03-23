@@ -1,0 +1,6 @@
+.intro {
+	@include full-screen;
+	@include zero-box;
+	@include background(url(../images/background.jpg) no-repeat center center);
+	background-size: cover;
+}
