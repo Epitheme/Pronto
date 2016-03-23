@@ -3,4 +3,27 @@
 	@include zero-box;
 	@include background(url(../images/background.jpg) no-repeat center center);
 	background-size: cover;
+	color: $color-white;
+
+	.vertical-center {
+		@include size(70% auto);
+		@include margin(0 auto);
+		@include padding(0);
+	}
+
+	h1.title {
+		font-size: em(72px);
+		@include zero-box;
+	}
+
+	h2.description {
+		width: em(300px);
+		max-width: 100%;
+		@include zero-box;
+
+		font-size: em(28px);
+		line-height: 1.66;
+
+		opacity: 0.8;
+	}
 }

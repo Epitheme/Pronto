@@ -1,5 +1,5 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Nunito:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 img, legend {
   border: 0; }
 
@@ -176,6 +176,15 @@ table {
                                           
 *****************************************************************
 ****************************************************************/
+.vertical-center {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 html, body {
   height: 100%;
   width: 100%;
@@ -213,16 +222,16 @@ html {
 
 body {
   color: #1d1d1d;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 300;
   line-height: 1.25; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: sans-serif;
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
   line-height: 1.25;
-  margin: 0 0 0.625em;
+  margin: 0;
   padding: 0; }
 
 h1 {
@@ -244,7 +253,7 @@ h6 {
   font-size: 0.75em; }
 
 p {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125em;
   font-weight: 400;
   line-height: 1.8; }
@@ -261,7 +270,7 @@ button {
   width: 12.5em;
   color: #fdfdfd;
   background-color: #229aff;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 400;
   border: 0;
@@ -278,12 +287,12 @@ input {
   height: 3.4375em;
   width: 30em;
   margin: 0 auto;
-  padding: 0 auto;
+  padding: 0 0.4375em;
   color: #1d1d1d;
   background-color: #fdfdfd;
   border: 0;
   border-radius: 1px;
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1em;
   font-weight: 400;
   text-align: left;
@@ -325,6 +334,24 @@ html {
   padding: 0;
   background: url(../images/background.jpg) no-repeat center center;
   background: url(../images/background.jpg) no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  color: #fdfdfd; }
+  .intro .vertical-center {
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0; }
+  .intro h1.title {
+    font-size: 4.5em;
+    margin: 0;
+    padding: 0; }
+  .intro h2.description {
+    width: 18.75em;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1.75em;
+    line-height: 1.66;
+    opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */
