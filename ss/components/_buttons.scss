@@ -3,7 +3,7 @@ button {
 	@include size(auto em(50px));
 	
 	@include margin(0 auto 0 em(5px));
-	@include padding(0 em(24px));
+	@include padding(0 em(36px));
 
 	color: $color-white;
 	background-color: $color-malibu;
@@ -11,7 +11,7 @@ button {
 	font-family: $title-font;
 	@include font-sw(em(16px), $default-font-weight);
 
-	border: 0;
+	border: 1px solid $color-malibu;
 	border-radius: $border-radius;
 
 	outline: none;
@@ -19,5 +19,8 @@ button {
 	
 	@extend %transition;
 
-	&:hover { background-color: shade($color-malibu, 10%); }
+	&:hover { 
+		background-color: lighten($color-malibu, 5%);
+		border: 1px solid lighten($color-malibu, 5%);
+	}
 }
