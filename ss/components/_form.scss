@@ -1,21 +1,29 @@
 // Form.scss
+form {
+	@include margin(em(15px) 0 0);
+}
 
 input {
-	@include size(em(480px) em(55px));
-	@include margin(0 auto);
-	@include padding(0 em(7px));
+	display: inline-block;
+	@include size(em(300px) em(50px));
+	@include margin(0);
+	@include padding(0 em(24px));
 	
-	color: $color-black;
-	background-color: $color-white;
+	color: $color-white;
+	background-color: rgba(255, 255, 255, 0.07);
 	
-	border: 0;
-	border-radius: 1px;
-
 	font-family: $title-font;
 	@include font-sw(em(16px), $default-font-weight);
+
+	border: 2px solid $color-white;
+	border-radius: $border-radius;
 	
 	text-align: left;
 	outline: none;
 
-	@include transition(all $animation-duration $animation-timing);
+	@extend %transition;
+
+	&:focus {
+		background-color: rgba(255, 255, 255, 0.25);
+	}
 }

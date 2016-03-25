@@ -30,3 +30,27 @@
 		font-weight: nth($args, 2);
 	}
 }
+
+@mixin placeholder($color) {
+	::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+	    color: $color-malibu;
+	}
+
+	:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+	   color: $color-malibu;
+	   opacity:  1;
+	}
+
+	::-moz-placeholder { /* Mozilla Firefox 19+ */
+	   color: $color-malibu;
+	   opacity:  1;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+	   color: $color-malibu;
+	}
+
+	:placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+	  color: $color-malibu;
+	}
+}

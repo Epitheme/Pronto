@@ -12,8 +12,10 @@
 	}
 
 	h1.title {
-		font-size: em(72px);
+		font-size: em(81px);
 		@include zero-box;
+		// text-align: justify;
+		// border: 1px solid red;
 	}
 
 	h2.description {
@@ -23,7 +25,8 @@
 
 		font-size: em(28px);
 		line-height: 1.66;
-
+		// text-align: justify;
 		opacity: 0.8;
+		// border: 1px solid blue;
 	}
 }

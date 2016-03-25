@@ -12,3 +12,7 @@ html, body {
 	opacity: 0;
 	@include transition(all $animation-duration $animation-timing);
 }
+
+%transition {
+	@include transition(all $animation-duration $animation-timing);
+}
