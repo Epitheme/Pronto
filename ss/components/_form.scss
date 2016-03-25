@@ -6,6 +6,7 @@ form {
 input {
 	display: inline-block;
 	@include size(em(300px) em(50px));
+	max-width: 100%;
 	@include margin(0);
 	@include padding(0 em(24px));
 	
@@ -26,5 +27,11 @@ input {
 	&:focus {
 		background-color: rgba(255, 255, 255, 0.25);
 	}
+	
+	@media screen and (max-width: $bp-sm) {
+		display: block;
+		width: 100%;
+	}
 }
+
 @include placeholder($color-gallery);

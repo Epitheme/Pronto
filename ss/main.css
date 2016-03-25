@@ -274,6 +274,7 @@ button {
   display: inline-block;
   height: 3.125em;
   width: auto;
+  max-width: 100%;
   margin: 0 auto 0 0.3125em;
   padding: 0 2.25em;
   color: #fdfdfd;
@@ -288,6 +289,11 @@ button {
   button:hover {
     background-color: #73d0fc;
     border: 1px solid #73d0fc; }
+  @media screen and (max-width: 33.75em) {
+    button {
+      display: block;
+      width: 100%;
+      margin: 0.9375em 0 0; } }
 
 form {
   margin: 2.25em 0 0; }
@@ -296,6 +302,7 @@ input {
   display: inline-block;
   height: 3.125em;
   width: 18.75em;
+  max-width: 100%;
   margin: 0;
   padding: 0 1.5em;
   color: #fdfdfd;
@@ -309,6 +316,10 @@ input {
   outline: none; }
   input:focus {
     background-color: rgba(255, 255, 255, 0.25); }
+  @media screen and (max-width: 33.75em) {
+    input {
+      display: block;
+      width: 100%; } }
 
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -369,7 +380,7 @@ html {
   color: #fdfdfd; }
   .intro .vertical-center {
     height: auto;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding: 0; }
   .intro h1.title {

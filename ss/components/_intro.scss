@@ -6,7 +6,7 @@
 	color: $color-white;
 
 	.vertical-center {
-		@include size(70% auto);
+		@include size(80% auto);
 		@include margin(0 auto);
 		@include padding(0);
 	}
@@ -14,8 +14,6 @@
 	h1.title {
 		font-size: em(81px);
 		@include zero-box;
-		// text-align: justify;
-		// border: 1px solid red;
 	}
 
 	h2.description {
@@ -25,8 +23,6 @@
 
 		font-size: em(28px);
 		line-height: 1.66;
-		// text-align: justify;
 		opacity: 0.8;
-		// border: 1px solid blue;
 	}
 }
