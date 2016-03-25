@@ -1,0 +1,30 @@
+.social {
+	max-width: 100%;
+	@include zero-box;
+	list-style: none;
+
+	li {
+		display: inline-block;
+		@include margin(0 em(15px) 0 0);
+
+		span {
+			display: inline-block;
+			@include size(em(36px) em(36px));
+			background-size: contain !important;
+			opacity: 0.66;
+		}
+	}
+
+	.email {
+		@include background(url(../images/email.png) no-repeat center center);
+	}
+
+	.twitter {
+		@include background(url(../images/twitter.png) no-repeat center center);
+	}
+
+	.instagram {
+		@include size(em(36px) em(32px));
+		@include background(url(../images/instagram.png) no-repeat center center);
+	}
+}

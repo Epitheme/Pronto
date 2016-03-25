@@ -205,7 +205,7 @@ html, body {
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
 
-button, input {
+button, input, footer a {
   -webkit-transition: all 175ms ease;
   -moz-transition: all 175ms ease;
   transition: all 175ms ease; }
@@ -394,6 +394,52 @@ html {
     padding: 0;
     font-size: 1.75em;
     line-height: 1.66;
+    opacity: 0.8; }
+
+.social {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .social li {
+    display: inline-block;
+    margin: 0 0.9375em 0 0; }
+    .social li span {
+      display: inline-block;
+      height: 2.25em;
+      width: 2.25em;
+      background-size: contain !important;
+      opacity: 0.66; }
+  .social .email {
+    background: url(../images/email.png) no-repeat center center;
+    background: url(../images/email.png) no-repeat center center; }
+  .social .twitter {
+    background: url(../images/twitter.png) no-repeat center center;
+    background: url(../images/twitter.png) no-repeat center center; }
+  .social .instagram {
+    height: 2em;
+    width: 2.25em;
+    background: url(../images/instagram.png) no-repeat center center;
+    background: url(../images/instagram.png) no-repeat center center; }
+
+footer {
+  position: relative;
+  top: 50%;
+  left: 10%; }
+  footer a:hover {
+    opacity: 1; }
+    footer a:hover span {
+      opacity: 1; }
+
+.credits {
+  margin: 0.3125em 0 0;
+  font-size: 1.5em;
+  opacity: 0.8; }
+  .credits span {
+    opacity: 0.8; }
+  .credits a {
+    color: #fdfdfd;
+    text-decoration: underline;
     opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */

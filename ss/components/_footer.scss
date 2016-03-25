@@ -1,0 +1,31 @@
+footer {
+	@include position(relative, 50% null null 10%);
+
+	a {
+		@extend %transition;
+
+		&:hover {
+			opacity: 1;
+
+			span {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.credits {
+	@include margin(em(5px) 0 0);
+	font-size: em(24px);
+	opacity: 0.8;
+
+	span {
+		opacity: 0.8;
+	}
+	
+	a  {
+		color: $color-white;
+		text-decoration: underline;
+		opacity: 0.8;
+	}
+}
